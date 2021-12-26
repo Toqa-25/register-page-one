@@ -1,0 +1,241 @@
+
+/* Root */
+:root{
+    --m-text-color:#f0f0f2;
+    /* --s-text-color:#464045; */
+    --s-text-color:#464045;
+    --th-text-color:#545050;
+    --pink-background:#f2dbdf;
+    --sign-btn-background:#c5bac7;
+    --log-btn-background:#443b90;
+    --footer-icon-background:#eeeeee;
+    --website-text:#c0bdd4;
+}
+/* global style */
+*, p{
+    box-sizing :border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-color:var(--th-text-color) ; */
+        background-color: #c5bac7;
+}
+.part-style{
+    width: 90%;
+}
+/* @media (min-width:575px){ */
+ @media (min-width:991px){
+    .part-style{
+        width: 45%;
+    }
+    }
+@media (max-width:990px){
+.part-style{
+    width: 60%;
+}
+}
+@media (max-width:767px){
+.part-style{
+    width: 80%;
+}
+}
+@media (max-width:575px){
+.part-style{
+    width: 95%;
+}
+}
+/**********************************************************************/
+/* sign in & log in style */
+.sign-log , #sign-form{
+    margin: 50px auto 15px;
+    background-color: var(--pink-background);
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+        color:var(--s-text-color);
+     text-align: center;
+
+}
+.sign-log-btn,.sign-log-btn:hover,.sign-log-btn:hover a {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 10px;
+    color:var(--m-text-color)
+
+
+}
+.sign-btn{
+    background-color: var(--sign-btn-background);
+}
+.log-btn{
+    background-color: var(--log-btn-background);
+}
+.sign-log-btn a{
+    text-decoration: none;
+    color:var(--m-text-color)
+
+}
+/* accept style */
+.accept{
+    color:var(--s-text-color);
+    margin:20px auto;
+}
+.accept-content{
+    background-color:var(--footer-icon-background) ;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: .75rem 1rem ;
+    font-size: 15px;
+}
+.acc-text{
+  margin-bottom: 0;
+}
+.acc-check{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid var(--s-text-color);
+    cursor: pointer;
+}
+.acc-check i {
+    margin: 3px 1px 3px 4px;
+    font-size: 14px;
+    line-height: 15px;
+    display: none;
+}
+/**********************************************************************/
+/* footer style */
+footer {
+    margin:15px auto 20px;
+    color:var(--s-text-color);
+    background-color: var(--pink-background);
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
+.footer-text{
+    padding: 75px 50px;
+    font-size: 11px;
+    text-align: center;
+}
+.footer-text-info{
+    width: 75%;
+    margin: 0 auto;
+}
+.footer-icons{
+    background-color:var(--footer-icon-background) ;
+    border-radius: 45px;
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+        padding: 5px 0;
+    color:var(--log-btn-background) ;
+
+
+}
+.footer-icons-group{  
+    width: 50%;
+    margin: 10px auto 0;
+}
+.footer-icons-group i{
+ font-size: 25px;
+ transition: .3s;
+ -webkit-transition: .3s;
+ -moz-transition: .3s;
+ -ms-transition: .3s;
+ -o-transition: .3s;
+color:var(--log-btn-background) ;
+
+}
+.footer-icons-group  a i:hover{ 
+    transform: rotate(
+360deg) scale(1.25);
+color: var(--log-btn-background);
+    color:var(--log-btn-background) ;
+
+}
+.web-text {
+    font-size: 14px;
+    margin: 10px auto;
+}
+.code-text {
+    font-size: 14px;
+    margin-bottom: 10px ;
+}
+footer a , footer a:hover{
+    text-decoration:none ;
+    color:var(--s-text-color);
+    cursor: pointer;
+
+}
+
+.coder a , .coder a:hover{
+    font-family: 'Pushster', cursive;
+    color:var(--log-btn-background) ;
+
+
+}
+/**********************************************************************/
+ /* sign-up page */
+ #sign-form{
+/* width: 70%; */
+padding: 30px;
+}
+   .form-input {
+       width: 100%;
+   }
+.input{
+    width: 65%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    outline: none;
+}
+#sign-form span{
+    font-size: 14px;
+}
+#sign-form span a{
+    color:var(--log-btn-background) ;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width:767px){
+    .flex-sm-column{
+        flex-direction: column;
+}
+.input{
+    width: 80%;
+}
+}
+/* @media (max-width:575px){
+    .flex-sm-column{
+        flex-direction: column;
+}
+.input{
+    width: 95%;
+}
+} */
+/**********************************************************************/
+ /* sign-up page */
+ /* @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css"; */
+::placeholder{
+     font-family: 'Font Awesome 5 free';
+     font-weight: 700;
+     color: var(--s-text-color);
+     font-size: 15px;
+     letter-spacing: 1px;
+     text-transform: capitalize;
+    color:var(--log-btn-background) ;
+     
+ }
